@@ -1,7 +1,1 @@
-﻿cl : command line warning D9002: ignoring unknown option '-std=c11'
-cl : command line warning D9002: ignoring unknown option '-lgdi32'
-  context.c
-  win32_time.c
-  window.c
-  Generating Code...
-  GLFW.vcxproj -> C:\Dev\Galaxy\Galaxy\vendor\GLFW\bin\Debug-windows-x86_64\GLFW\GLFW.lib
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(392,5): error MSB3191: Unable to create directory "..\GLFW ..\bin-int\Debug-windows-x86_64\GLFW\". Could not find a part of the path '..\GLFW ..\bin-int\Debug-windows-x86_64\GLFW\'.
