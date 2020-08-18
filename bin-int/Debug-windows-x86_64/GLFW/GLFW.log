@@ -13,7 +13,6 @@ cl : command line warning D9002: ignoring unknown option '-lgdi32'
   win32_monitor.c
   win32_thread.c
   win32_time.c
-  win32_window.c
   window.c
   Generating Code...
-  GLFW.vcxproj -> C:\Dev\Galaxy\Galaxy\vendor\GLFW\bin\Debug-windows-x86_64\GLFW\GLFW.lib
+C:\Dev\Galaxy\Galaxy\vendor\GLFW\src\win32_monitor.c : fatal error C1090: PDB API call failed, error code '3': C:\Dev\Galaxy\Galaxy\vendor\GLFW\bin-int\Debug-windows-x86_64\GLFW\GLFW.pdb
