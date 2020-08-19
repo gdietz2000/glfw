@@ -1,6 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
+	staticruntime "On"
 
 	--targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	--objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -22,9 +23,7 @@ project "GLFW"
 	}
 
 	filter "system:windows"
-		buildoptions {"-std=c11", "-lgdi32"}
 		systemversion "latest"
-		staticruntime "On"
 
 		files
 		{
@@ -45,5 +44,12 @@ project "GLFW"
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 
-	filter {"system:windows", "configurations:Release"}
-		buildoptions "/MT"
+	filter "configurations:Debug"
+		defines "GX_DEBUG"
+		runtime "Debug"
+		symbols "On"
+		
+	filter "configurations:Release"
+		defines "GX_RELEASE"
+		runtime "Release"
+		optimize "On"
